@@ -10,8 +10,8 @@ function draw(){
 }
 
 function draw_terrain(){
-  for(var x=100;x<500;x=x+2){
-    for(var y=100;y<500;y=y+2){
+  for(var x=100;x<500;x=x+10){
+    for(var y=100;y<500;y=y+10){
 			
 			let x2=x+y/2;
 			let h=200*noise(x/200,y/200);
