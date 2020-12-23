@@ -1,5 +1,5 @@
 function setup(){
-  createCanvas(600, 600);
+  createCanvas(800, 800);
   background('black');
   noStroke();
   colorMode(HSB,360,100,100,100);
@@ -10,11 +10,17 @@ function draw(){
 }
 
 function draw_terrain(){
-  for(var x=100;x<500;x=x+5){
-    for(var y=100;y<500;y=y+5){
-
-      fill(0,0,100);
-      circle(x,y,2);
+  for(var x=100;x<500;x=x+2){
+    for(var y=100;y<500;y=y+2){
+			
+			let x2=x+y/2;
+			let h=200*noise(x/200,y/200);
+			h+=30*noise(x/50,y/50);
+			let y2=y+h-100;
+			
+			
+      fill((map(h,0,230,0,360)+120)%360,80,map(h,0,230,80,0),30);
+      circle(x2,y2,2);
       
     }
   }
