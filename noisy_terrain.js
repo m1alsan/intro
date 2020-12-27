@@ -1,22 +1,14 @@
-let lastTime=0;
-let deltaTime=1000;
-
 function setup(){
   createCanvas(950, 600);
   background('black');
   noStroke();
   colorMode(HSB,360,100,100,100);
-  //noLoop();
+
 }
 
 function draw(){
 
-
-  if(deltaTime <= millis()-lastTime){
-    lastTime=millis();
-    background('black');
-  }
-
+  background('black');
   draw_terrain(random(-10,10));
 
 }
