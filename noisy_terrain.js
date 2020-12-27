@@ -10,20 +10,15 @@ function setup(){
 }
 
 function draw(){
-  draw_terrain(random(-10,10));
+
 
   if(deltaTime <= millis()-lastTime){
     lastTime=millis();
     background('black');
   }
 
+  draw_terrain(random(-10,10));
 
-
-}
-
-function mousePressed() {
-  clear();
-  background('black');
 }
 
 function draw_terrain(r){
