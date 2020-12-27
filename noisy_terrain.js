@@ -6,7 +6,7 @@ function setup(){
   background('black');
   noStroke();
   colorMode(HSB,360,100,100,100);
-  noLoop();
+  //noLoop();
 }
 
 function draw(){
