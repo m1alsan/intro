@@ -14,9 +14,7 @@ function draw(){
 
   if(deltaTime <= millis()-lastTime){
     lastTime=millis();
-    //clear();
-
-    //text('Milliseconds \nrunning: \n' + lastTime, 5, 40*lastTime/500);
+    background('black');
   }
 
 
@@ -40,7 +38,7 @@ function draw_terrain(r){
 
       fill((map(h,0,230,0,360)+120)%360,80,map(h,0,230,100,50),90);
 
-      circle(x2,y2,2);
+      circle(x2+r,y2+r,2);
 
     }
   }
