@@ -10,7 +10,7 @@ function setup(){
 }
 
 function draw(){
-  draw_terrain(random(-1,1));
+  draw_terrain(random(-10,10));
 
   if(deltaTime <= millis()-lastTime){
     lastTime=millis();
