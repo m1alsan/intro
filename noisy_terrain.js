@@ -18,7 +18,7 @@ function draw_terrain(xr, yr) {
 			h += 30 * noise(x / 50, y / 50);
 			let y2 = y + h - 100 + xr;
 
-			fill((map(h, 0, 230, 0, 360) + 90) % 360, 80, map(h, 0, 230, 100, 50), 90);
+			fill((map(h, 0, 230, 0, 360) + 10) % 360, 80, map(h, 0, 230, 100, 50), 90);
 			circle(x2, y2, 2);
 		}
 	}
