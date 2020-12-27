@@ -7,7 +7,7 @@ function setup() {
 
 function draw() {
 	background("black");
-	draw_terrain(random(-10, 10), random(-1, 1));
+	draw_terrain(random(-5, 5), random(-5, 5));
 }
 
 function draw_terrain(xr, yr) {
