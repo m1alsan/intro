@@ -1,13 +1,13 @@
 function setup() {
-	let cnv = createCanvas(600, 600);
+	let cnv = createCanvas(windowWidth, windowHeight);
 	cnv.parent("canvas");
 	
 	noStroke();
 	colorMode(HSB, 360, 100, 100, 100);
-	frameRate(10);
+	frameRate(5);
+	fill(200, 50, 80, 20);
 }
 
 function draw() {
-	background("black");
 	ellipse(random(width), random(height), 100, 100);
 }
