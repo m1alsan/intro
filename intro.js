@@ -1,6 +1,6 @@
 function setup() {
 	let cnv = createCanvas(600, 600);
-	cnv.parent("div");
+	cnv.parent("canvas");
 	
 	noStroke();
 	colorMode(HSB, 360, 100, 100, 100);
