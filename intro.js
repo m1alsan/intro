@@ -1,5 +1,5 @@
 function setup() {
-	let cnv = createCanvas(windowWidth, windowHeight);
+	let cnv = createCanvas(displayWidth, displayHeight);
 	cnv.parent("canvas");
 	
 	noStroke();
